@@ -4,7 +4,8 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  root: 'client', // tells Vite where index.html lives
+  root: 'client',
+  base: './', // important!
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'client/src'),
@@ -12,7 +13,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../dist', // build output relative to repo root
+    outDir: '../dist',
     emptyOutDir: true,
   },
 });

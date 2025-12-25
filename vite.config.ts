@@ -1,18 +1,15 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
-  root: "client",
-  base: "/code_adventures_website/", // <-- GitHub Pages repo name
   plugins: [react()],
+  build: {
+    outDir: 'dist', // this is relative to vite.config.ts location
+  },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client/src")
-    }
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
-  build: {
-    outDir: "../dist",
-    emptyOutDir: true
-  }
-});
+})

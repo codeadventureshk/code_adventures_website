@@ -35,34 +35,71 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+        </div>
         <div class="hero-content">
+            <div class="hero-badge" id="heroBadge">🚀 Welcome to Code Adventures</div>
             <h1 id="heroTitle">Inspire the Next Generation of Innovators</h1>
             <p id="heroSubtitle">High-quality online STEM education for Hong Kong students</p>
             <button class="cta-button" onclick="document.getElementById('courses').scrollIntoView({behavior: 'smooth'})">
                 <span id="ctaText">Explore Courses</span>
             </button>
+
         </div>
     </section>
 
     <!-- Company Overview -->
     <section class="company-overview">
         <div class="container">
-            <h2 id="companyTitle">Company Overview</h2>
-            <p id="companyDesc">Our company is dedicated to providing high-quality online STEM education to primary and junior secondary students in Hong Kong. We focus on interactive, real-time programming classes that inspire creativity, logical thinking, and problem-solving skills. Our curriculum is designed to make coding fun and accessible for every child — from Blockly for beginners (P3–P6) to Python for young developers (S1–S3).</p>
+            <div class="company-header">
+                <h2 id="companyTitle">Company Overview</h2>
+                <div class="company-accent"></div>
+            </div>
+            <div class="company-content">
+                <p id="companyDesc">Our company is dedicated to providing high-quality online STEM education to primary and junior secondary students in Hong Kong. We focus on interactive, real-time programming classes that inspire creativity, logical thinking, and problem-solving skills. Our curriculum is designed to make coding fun and accessible for every child — from Blockly for beginners (P3–P6) to Python for young developers (S1–S3).</p>
+                <div class="company-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <h4 id="focusTitle">Our Focus</h4>
+                        <p id="focusDesc">Interactive, real-time classes</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🌟</div>
+                        <h4 id="goalTitle">Our Goal</h4>
+                        <p id="goalDesc">Make coding fun & accessible</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📚</div>
+                        <h4 id="curriculumTitle">Our Curriculum</h4>
+                        <p id="curriculumDesc">Blockly to Python progression</p>
+                    </div>
+                </div>
+            </div>
             
             <div class="mission-section">
                 <h3 id="missionTitle">Our Mission</h3>
                 <div class="mission-grid">
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-1">
+                        <div class="mission-icon">💪</div>
+                        <h4 id="missionHead1">Build Confidence</h4>
                         <p id="mission1">Build students' confidence in technology and coding</p>
                     </div>
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-2">
+                        <div class="mission-icon">🧠</div>
+                        <h4 id="missionHead2">Problem Solving</h4>
                         <p id="mission2">Encourage problem-solving through hands-on learning</p>
                     </div>
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-3">
+                        <div class="mission-icon">🌍</div>
+                        <h4 id="missionHead3">Bilingual Learning</h4>
                         <p id="mission3">Provide a bilingual (English & Cantonese) learning environment</p>
                     </div>
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-4">
+                        <div class="mission-icon">🏠</div>
+                        <h4 id="missionHead4">Accessible</h4>
                         <p id="mission4">Make quality STEM education accessible from home</p>
                     </div>
                 </div>
@@ -166,9 +203,15 @@
             </div>
 
             <!-- Vision -->
-            <div class="vision-card">
-                <h3 id="visionTitle">Our Vision</h3>
-                <p id="visionDesc">Our vision is to become Hong Kong's leading youth-driven STEM education platform — where creativity meets technology. We aim to empower more students to see coding not as homework, but as a tool to change the world.</p>
+            <div class="vision-section">
+                <div class="vision-card">
+                    <div class="vision-icon">🌟</div>
+                    <h3 id="visionTitle">Our Vision</h3>
+                    <p id="visionDesc">Our vision is to become Hong Kong's leading youth-driven STEM education platform — where creativity meets technology. We aim to empower more students to see coding not as homework, but as a tool to change the world.</p>
+                    <div class="vision-highlight">
+                        <span class="highlight-text">✨ Creativity Meets Technology ✨</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -199,17 +242,7 @@
                 </div>
             </div>
 
-            <!-- Additional Contact Info -->
-            <div class="contact-info">
-                <div class="info-item">
-                    <strong id="emailLabel">Email:</strong>
-                    <p>hello@stemtutorial.hk</p>
-                </div>
-                <div class="info-item">
-                    <strong id="addressLabel">Address:</strong>
-                    <p>Hong Kong</p>
-                </div>
-            </div>
+
         </div>
     </section>
 

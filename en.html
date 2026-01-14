@@ -35,34 +35,71 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+        </div>
         <div class="hero-content">
+            <div class="hero-badge" id="heroBadge">🚀 歡迎來到Code Adventures</div>
             <h1 id="heroTitle">啟發下一代創新者</h1>
             <p id="heroSubtitle">為香港學生提供高質素的線上STEM教育</p>
             <button class="cta-button" onclick="document.getElementById('courses').scrollIntoView({behavior: 'smooth'})">
                 <span id="ctaText">探索課程</span>
             </button>
+
         </div>
     </section>
 
     <!-- Company Overview -->
     <section class="company-overview">
         <div class="container">
-            <h2 id="companyTitle">公司簡介</h2>
-            <p id="companyDesc">本公司專注為香港的小學及初中學生提供高質素的線上STEM教育。我們以互動、即時的編程課堂為核心，培養學生的創意、邏輯思維及解難能力。課程設計以趣味與實踐並重，從適合初學者的Blockly（小三至小六）到入門程式語言Python（中一至中三），讓學生循序漸進地愛上編程。</p>
+            <div class="company-header">
+                <h2 id="companyTitle">公司簡介</h2>
+                <div class="company-accent"></div>
+            </div>
+            <div class="company-content">
+                <p id="companyDesc">本公司專注為香港的小學及初中學生提供高質素的線上STEM教育。我們以互動、即時的編程課堂為核心，培養學生的創意、邏輯思維及解難能力。課程設計以趣味與實踐並重，從適合初學者的Blockly（小三至小六）到入門程式語言Python（中一至中三），讓學生循序漸進地愛上編程。</p>
+                <div class="company-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <h4 id="focusTitle">我們的焦點</h4>
+                        <p id="focusDesc">互動、即時的課堂</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🌟</div>
+                        <h4 id="goalTitle">我們的目標</h4>
+                        <p id="goalDesc">讓編程變得有趣易學</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📚</div>
+                        <h4 id="curriculumTitle">我們的課程</h4>
+                        <p id="curriculumDesc">Blockly到Python進階</p>
+                    </div>
+                </div>
+            </div>
             
             <div class="mission-section">
                 <h3 id="missionTitle">我們的宗旨</h3>
                 <div class="mission-grid">
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-1">
+                        <div class="mission-icon">💪</div>
+                        <h4 id="missionHead1">建立信心</h4>
                         <p id="mission1">建立學生對科技與編程的信心</p>
                     </div>
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-2">
+                        <div class="mission-icon">🧠</div>
+                        <h4 id="missionHead2">解難能力</h4>
                         <p id="mission2">透過實作學習提升解難能力</p>
                     </div>
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-3">
+                        <div class="mission-icon">🌍</div>
+                        <h4 id="missionHead3">雙語教學</h4>
                         <p id="mission3">提供英語及廣東話雙語教學環境</p>
                     </div>
-                    <div class="mission-card">
+                    <div class="mission-card mission-card-4">
+                        <div class="mission-icon">🏠</div>
+                        <h4 id="missionHead4">易於取得</h4>
                         <p id="mission4">讓學生在家中也能享有優質STEM教育</p>
                     </div>
                 </div>
@@ -166,9 +203,15 @@
             </div>
 
             <!-- Vision -->
-            <div class="vision-card">
-                <h3 id="visionTitle">我們的願景</h3>
-                <p id="visionDesc">我們的願景是成為香港最具創意的青少年STEM教育平台，讓科技成為孩子發揮創意與影響力的工具。我們希望每位學生都能從編程中發現自信與無限可能。</p>
+            <div class="vision-section">
+                <div class="vision-card">
+                    <div class="vision-icon">🌟</div>
+                    <h3 id="visionTitle">我們的願景</h3>
+                    <p id="visionDesc">我們的願景是成為香港最具創意的青少年STEM教育平台，讓科技成為孩子發揮創意與影響力的工具。我們希望每位學生都能從編程中發現自信與無限可能。</p>
+                    <div class="vision-highlight">
+                        <span class="highlight-text">✨ 科技與創意的完美結合 ✨</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -199,17 +242,7 @@
                 </div>
             </div>
 
-            <!-- Additional Contact Info -->
-            <div class="contact-info">
-                <div class="info-item">
-                    <strong id="emailLabel">電郵：</strong>
-                    <p>hello@stemtutorial.hk</p>
-                </div>
-                <div class="info-item">
-                    <strong id="addressLabel">地址：</strong>
-                    <p>香港</p>
-                </div>
-            </div>
+
         </div>
     </section>
 

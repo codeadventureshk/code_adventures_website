@@ -17,7 +17,7 @@
                 <span class="logo-text">Code Adventures</span>
             </div>
             <nav class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link" data-en="Home" data-zh="首頁">Home</a>
                 <button class="lang-toggle" onclick="toggleLanguage()">
                     <span class="lang-icon">🌐</span>
                     <span class="lang-text" id="langText">中文</span>
@@ -31,12 +31,38 @@
         </div>
     </header>
 
-    <!-- Header -->
-    <section class="course-header python-header-section">
-        <div class="container">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1 id="pythonPageTitle">Python Programming for S1-S3</h1>
-            <p id="pythonPageDesc">Learn professional programming with Python, the most popular language for beginners and professionals alike.</p>
+    <!-- Hero Section - Python -->
+    <section class="python-hero">
+        <div class="hero-background">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <a href="index.html" class="back-link" data-en="← Back to Home" data-zh="← 返回首頁">← Back to Home</a>
+                <h1 class="hero-title" data-en="Master Python Programming" data-zh="掌握 Python 編程">Master Python Programming</h1>
+                <p class="hero-subtitle" data-en="From Beginner to Professional Developer" data-zh="從初學者到專業開發者">From Beginner to Professional Developer</p>
+                <p class="hero-description" data-en="Learn the most popular programming language used by Google, Netflix, and top tech companies worldwide. Build real applications, games, and AI projects." data-zh="學習被 Google、Netflix 和全球頂級科技公司使用的最受歡迎的編程語言。構建真實應用、遊戲和 AI 項目。">Learn the most popular programming language used by Google, Netflix, and top tech companies worldwide. Build real applications, games, and AI projects.</p>
+                <div class="hero-cta">
+                    <a href="#objectives" class="btn btn-primary" data-en="Explore Course" data-zh="探索課程">Explore Course</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Get Started" data-zh="開始學習">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                    </div>
+                    <div class="code-body">
+                        <div class="code-line"><span class="code-keyword">def</span> <span class="code-function">create_game</span>():</div>
+                        <div class="code-line"><span class="code-indent">🎮 Build amazing things</span></div>
+                        <div class="code-line"><span class="code-keyword">return</span> <span class="code-string">"Success!"</span></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -46,183 +72,179 @@
             <div class="overview-cards">
                 <div class="overview-card">
                     <div class="icon">📚</div>
-                    <h3 id="levelLabel">Level</h3>
+                    <h3 id="levelLabel" data-en="Level" data-zh="程度">Level</h3>
                     <p>S1 - S3</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">👥</div>
-                    <h3 id="maxStudentsLabel">Max Students</h3>
+                    <h3 id="maxStudentsLabel" data-en="Max Students" data-zh="最多學生數">Max Students</h3>
                     <p>8 students</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">💻</div>
-                    <h3 id="formatLabel">Format</h3>
-                    <p id="onlineLabel">Online (Live)</p>
-                </div>
-                <div class="overview-card">
-                    <div class="icon">🌐</div>
-                    <h3 id="languageLabel">Language</h3>
-                    <p id="bilingualLabel">English & Cantonese</p>
+                    <h3 id="formatLabel" data-en="Format" data-zh="形式">Format</h3>
+                    <p id="onlineLabel" data-en="Online (Live)" data-zh="線上（即時）">Online (Live)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Learning Objectives -->
-    <section class="learning-objectives">
+    <!-- Why Python - Featured Section -->
+    <section class="why-python-featured">
         <div class="container">
-            <h2 id="objectivesTitle">Learning Objectives</h2>
-            <div class="objectives-grid">
-                <div class="objective-card">
-                    <div class="obj-number">1</div>
-                    <p id="obj1">Master Python fundamentals and syntax</p>
+            <div class="featured-header">
+                <h2 id="whyPythonTitle" data-en="Why Python is the Best Choice" data-zh="為什麼 Python 是最佳選擇">Why Python is the Best Choice</h2>
+                <p data-en="Used by the world's leading tech companies" data-zh="被全球領先的科技公司使用">Used by the world's leading tech companies</p>
+            </div>
+            <div class="why-featured-grid">
+                <div class="featured-card featured-card-large">
+                    <div class="featured-icon">📖</div>
+                    <h3 data-en="Easy to Learn" data-zh="易於學習">Easy to Learn</h3>
+                    <p data-en="Python reads like English, making it perfect for beginners. No complex syntax to memorize!" data-zh="Python 讀起來像英文，非常適合初學者。無需記憶複雜的語法！">Python reads like English, making it perfect for beginners. No complex syntax to memorize!</p>
                 </div>
-                <div class="objective-card">
-                    <div class="obj-number">2</div>
-                    <p id="obj2">Build real-world applications and games</p>
+                <div class="featured-card featured-card-highlight">
+                    <div class="featured-icon">🚀</div>
+                    <h3 data-en="Industry Standard" data-zh="行業標準">Industry Standard</h3>
+                    <p data-en="Used by Google, Netflix, Spotify, and thousands of tech companies. Learn what professionals use!" data-zh="被 Google、Netflix、Spotify 和數千家科技公司使用。學習專業人士使用的語言！">Used by Google, Netflix, Spotify, and thousands of tech companies. Learn what professionals use!</p>
                 </div>
-                <div class="objective-card">
-                    <div class="obj-number">3</div>
-                    <p id="obj3">Develop problem-solving and computational thinking skills</p>
-                </div>
-                <div class="objective-card">
-                    <div class="obj-number">4</div>
-                    <p id="obj4">Collaborate and present your projects</p>
+                <div class="featured-card featured-card-large">
+                    <div class="featured-icon">💼</div>
+                    <h3 data-en="Career Ready" data-zh="職業準備">Career Ready</h3>
+                    <p data-en="Master skills that lead to high-paying jobs in tech, data science, AI, and web development." data-zh="掌握導向科技、數據科學、AI 和網頁開發高薪工作的技能。">Master skills that lead to high-paying jobs in tech, data science, AI, and web development.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Curriculum -->
-    <section class="curriculum">
+    <!-- Learning Objectives - Unique Layout -->
+    <section class="learning-objectives-alt">
         <div class="container">
-            <h2 id="curriculumTitle">Curriculum Overview</h2>
-            <div class="curriculum-modules">
-                <div class="module-card">
-                    <div class="module-number">Module 1</div>
-                    <h3 id="module1Title">Python Basics</h3>
-                    <p id="module1Desc">Variables, data types, operators, and basic control flow</p>
+            <h2 id="objectivesTitle" data-en="What You'll Learn" data-zh="您將學習什麼">What You'll Learn</h2>
+            <div class="objectives-alt-grid">
+                <div class="objective-alt-card">
+                    <div class="obj-number">01</div>
+                    <h3 data-en="Python Fundamentals" data-zh="Python 基礎">Python Fundamentals</h3>
+                    <p data-en="Master syntax, data types, and control flow through hands-on practice and real-world examples." data-zh="通過實踐和真實示例掌握語法、數據類型和控制流。">Master syntax, data types, and control flow through hands-on practice and real-world examples.</p>
+                    <div class="obj-icon">🎯</div>
                 </div>
-                <div class="module-card">
-                    <div class="module-number">Module 2</div>
-                    <h3 id="module2Title">Functions & Logic</h3>
-                    <p id="module2Desc">Writing functions, conditional statements, and loops</p>
+                <div class="objective-alt-card">
+                    <div class="obj-number">02</div>
+                    <h3 data-en="Build Real Projects" data-zh="構建真實項目">Build Real Projects</h3>
+                    <p data-en="Create games, web scrapers, automation tools, and applications that you can actually use and share." data-zh="創建遊戲、網頁爬蟲、自動化工具和您可以實際使用和分享的應用程序。">Create games, web scrapers, automation tools, and applications that you can actually use and share.</p>
+                    <div class="obj-icon">🚀</div>
                 </div>
-                <div class="module-card">
-                    <div class="module-number">Module 3</div>
-                    <h3 id="module3Title">Data Structures</h3>
-                    <p id="module3Desc">Lists, dictionaries, tuples, and file handling</p>
-                </div>
-                <div class="module-card">
-                    <div class="module-number">Module 4</div>
-                    <h3 id="module4Title">Projects & Applications</h3>
-                    <p id="module4Desc">Build games, web scrapers, and real-world applications</p>
+                <div class="objective-alt-card">
+                    <div class="obj-number">03</div>
+                    <h3 data-en="Problem-Solving Mastery" data-zh="解決問題的掌握">Problem-Solving Mastery</h3>
+                    <p data-en="Develop computational thinking and debugging skills that will make you a confident programmer." data-zh="培養運算思維和除錯技能，使您成為自信的程序員。">Develop computational thinking and debugging skills that will make you a confident programmer.</p>
+                    <div class="obj-icon">💡</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Class Structure -->
-    <section class="class-structure">
+    <!-- Curriculum - Timeline Style -->
+    <section class="curriculum-timeline">
         <div class="container">
-            <h2 id="structureTitle">Class Structure</h2>
-            <div class="structure-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">🔥</div>
-                    <h3 id="warmupTitle">Warm-up & Review</h3>
-                    <p id="warmupDesc">5-10 minutes: Quick review of previous concepts and warm-up exercises</p>
+            <h2 id="curriculumTitle" data-en="Your Learning Journey" data-zh="您的學習之旅">Your Learning Journey</h2>
+            <div class="timeline-vertical">
+                <div class="timeline-step">
+                    <div class="timeline-marker">
+                        <div class="timeline-circle">1</div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-en="Foundation: Python Basics" data-zh="基礎：Python 基礎">Foundation: Python Basics</h3>
+                        <p data-en="Variables, data types, operators, loops, and conditional statements. Build a strong foundation!" data-zh="變量、數據類型、運算符、循環和條件語句。建立堅實的基礎！">Variables, data types, operators, loops, and conditional statements. Build a strong foundation!</p>
+                        <span class="timeline-tag">Weeks 1-3</span>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">💡</div>
-                    <h3 id="conceptTitle">New Concepts</h3>
-                    <p id="conceptDesc">20-25 minutes: Interactive teaching with live coding demonstrations</p>
+                <div class="timeline-step">
+                    <div class="timeline-marker">
+                        <div class="timeline-circle">2</div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-en="Core: Functions & Logic" data-zh="核心：函數和邏輯">Core: Functions & Logic</h3>
+                        <p data-en="Write reusable functions, master logical thinking, and start building your first programs." data-zh="編寫可重複使用的函數、掌握邏輯思維並開始構建您的第一個程序。">Write reusable functions, master logical thinking, and start building your first programs.</p>
+                        <span class="timeline-tag">Weeks 4-6</span>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">🎯</div>
-                    <h3 id="practiceTitle">Hands-on Practice</h3>
-                    <p id="practiceDesc">20-25 minutes: Students code along with instructor guidance and peer collaboration</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">🎓</div>
-                    <h3 id="wrapupTitle">Wrap-up & Q&A</h3>
-                    <p id="wrapupDesc">5-10 minutes: Review key concepts and answer questions</p>
+                <div class="timeline-step">
+                    <div class="timeline-marker">
+                        <div class="timeline-circle">3</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 data-en="Advanced: Real-World Projects" data-zh="高級：真實項目">Advanced: Real-World Projects</h3>
+                        <p data-en="Build games, web scrapers, data analysis tools, and showcase your portfolio-worthy projects!" data-zh="構建遊戲、網頁爬蟲、數據分析工具並展示您的投資組合級項目！">Build games, web scrapers, data analysis tools, and showcase your portfolio-worthy projects!</p>
+                        <span class="timeline-tag">Weeks 7-12</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Requirements -->
-    <section class="requirements">
+    <!-- Class Structure - Horizontal Timeline -->
+    <section class="class-structure-horizontal">
         <div class="container">
-            <h2 id="requirementsTitle">Requirements</h2>
-            <div class="requirements-grid">
-                <div class="requirement-card">
-                    <h3 id="techReqTitle">Technical Requirements</h3>
-                    <ul>
-                        <li id="req1">✓ Computer with internet connection</li>
-                        <li id="req2">✓ Python 3.x installed</li>
-                        <li id="req3">✓ Modern web browser</li>
-                    </ul>
+            <h2 id="structureTitle" data-en="How Our Classes Work" data-zh="我們的課堂如何運作">How Our Classes Work</h2>
+            <div class="horizontal-timeline">
+                <div class="h-timeline-item">
+                    <div class="h-timeline-icon">🔥</div>
+                    <h3 data-en="Warm-up" data-zh="熱身">Warm-up</h3>
+                    <p data-en="5-10 min" data-zh="5-10 分鐘">5-10 min</p>
+                    <p class="h-timeline-desc" data-en="Quick review & fun exercises" data-zh="快速復習和有趣的練習">Quick review & fun exercises</p>
                 </div>
-                <div class="requirement-card">
-                    <h3 id="personalReqTitle">Personal Requirements</h3>
-                    <ul>
-                        <li id="req4">✓ Enthusiasm to learn</li>
-                        <li id="req5">✓ Willingness to collaborate</li>
-                        <li id="req6">✓ Curiosity and problem-solving mindset</li>
-                    </ul>
+                <div class="h-timeline-arrow">→</div>
+                <div class="h-timeline-item">
+                    <div class="h-timeline-icon">💡</div>
+                    <h3 data-en="Teaching" data-zh="教學">Teaching</h3>
+                    <p data-en="20-25 min" data-zh="20-25 分鐘">20-25 min</p>
+                    <p class="h-timeline-desc" data-en="Interactive live coding" data-zh="互動實時編碼">Interactive live coding</p>
+                </div>
+                <div class="h-timeline-arrow">→</div>
+                <div class="h-timeline-item">
+                    <div class="h-timeline-icon">🎯</div>
+                    <h3 data-en="Practice" data-zh="練習">Practice</h3>
+                    <p data-en="20-25 min" data-zh="20-25 分鐘">20-25 min</p>
+                    <p class="h-timeline-desc" data-en="Code together with guidance" data-zh="在指導下一起編碼">Code together with guidance</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Support -->
-    <section class="support">
+    <!-- Support - 2+1 Layout -->
+    <section class="support-unique">
         <div class="container">
-            <h2 id="supportTitle">Support</h2>
-            <div class="support-grid">
-                <div class="support-card">
+            <h2 id="supportTitle" data-en="We're Here to Support You" data-zh="我們在這裡支持您">We're Here to Support You</h2>
+            <div class="support-unique-grid">
+                <div class="support-card-large">
                     <div class="support-icon">👨‍🏫</div>
-                    <h3 id="mentorshipTitle">One-on-one Mentorship</h3>
-                    <p id="mentorshipDesc">Get personalized guidance from experienced instructors</p>
+                    <h3 data-en="Expert Mentorship" data-zh="專家指導">Expert Mentorship</h3>
+                    <p data-en="Get personalized guidance from experienced Python developers. One-on-one support whenever you need it." data-zh="獲得來自經驗豐富的 Python 開發者的個性化指導。隨時獲得一對一支持。">Get personalized guidance from experienced Python developers. One-on-one support whenever you need it.</p>
                 </div>
-                <div class="support-card">
-                    <div class="support-icon">💬</div>
-                    <h3 id="communityTitle">Community Forum</h3>
-                    <p id="communityDesc">Connect with other students and share ideas</p>
-                </div>
-                <div class="support-card">
+                <div class="support-card-large">
                     <div class="support-icon">📚</div>
-                    <h3 id="resourcesTitle">Learning Resources</h3>
-                    <p id="resourcesDesc">Access course materials and coding resources</p>
+                    <h3 data-en="Learning Resources" data-zh="學習資源">Learning Resources</h3>
+                    <p data-en="Access comprehensive course materials, code examples, practice exercises, and documentation." data-zh="訪問全面的課程材料、代碼示例、練習練習和文檔。">Access comprehensive course materials, code examples, practice exercises, and documentation.</p>
+                </div>
+                <div class="support-card-small">
+                    <div class="support-icon">🏆</div>
+                    <h3 data-en="Certificates" data-zh="證書">Certificates</h3>
+                    <p data-en="Earn recognized certificates upon completion" data-zh="完成後獲得認可的證書">Earn recognized certificates upon completion</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Schedule -->
-    <section class="schedule">
+    <!-- CTA Section -->
+    <section class="course-cta-python">
         <div class="container">
-            <h2 id="scheduleTitle">Flexible Schedule</h2>
-            <div class="schedule-card">
-                <p id="scheduleDesc">We offer flexible scheduling to accommodate your needs. Classes can be arranged:</p>
-                <ul>
-                    <li id="schedule1">Weekday evenings (after school)</li>
-                    <li id="schedule2">Weekend mornings or afternoons</li>
-                    <li id="schedule3">School holidays</li>
-                    <li id="schedule4">Customized schedules for groups</li>
-                </ul>
-                <p id="scheduleContact">Contact us to discuss the best schedule for you!</p>
+            <div class="cta-content">
+                <h2 id="ctaTitle" data-en="Ready to Master Python?" data-zh="準備掌握 Python？">Ready to Master Python?</h2>
+                <p id="ctaDesc" data-en="Join hundreds of students who are already building amazing projects. Limited spots available!" data-zh="加入已經在構建令人驚嘆項目的數百名學生。名額有限！">Join hundreds of students who are already building amazing projects. Limited spots available!</p>
+                <a href="index.html" class="cta-button-large" id="enrollBtn" data-en="Enroll Now & Get Started" data-zh="立即報名並開始">Enroll Now & Get Started</a>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="course-cta">
-        <div class="container">
-            <h2 id="ctaTitle">Ready to Start Your Python Journey?</h2>
-            <p id="ctaDesc">Join us and learn professional programming skills in a fun, supportive environment. Limited spots available!</p>
-            <a href="index.html" class="cta-button" id="enrollBtn">Enroll Now</a>
         </div>
     </section>
 
@@ -231,19 +253,19 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h4 id="footerAboutTitle">About Us</h4>
-                    <p id="footerAboutDesc">Code Adventures - Leading STEM education provider for Hong Kong students</p>
+                    <h4 id="footerAboutTitle" data-en="About Us" data-zh="關於我們">About Us</h4>
+                    <p id="footerAboutDesc" data-en="Code Adventures - Leading STEM education provider" data-zh="Code Adventures - 領先的 STEM 教育提供者">Code Adventures - Leading STEM education provider</p>
                 </div>
                 <div class="footer-section">
-                    <h4 id="footerLinksTitle">Quick Links</h4>
+                    <h4 id="footerLinksTitle" data-en="Quick Links" data-zh="快速連結">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#courses" id="footerCoursesLink">Courses</a></li>
-                        <li><a href="index.html#about" id="footerAboutLink">About</a></li>
-                        <li><a href="index.html#contact" id="footerContactLink">Contact</a></li>
+                        <li><a href="index.html#courses" id="footerCoursesLink" data-en="Courses" data-zh="課程">Courses</a></li>
+                        <li><a href="index.html#about" id="footerAboutLink" data-en="About" data-zh="關於">About</a></li>
+                        <li><a href="index.html#contact" id="footerContactLink" data-en="Contact" data-zh="聯絡">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 id="footerFollowTitle">Follow Us</h4>
+                    <h4 id="footerFollowTitle" data-en="Follow Us" data-zh="追蹤我們">Follow Us</h4>
                     <div class="social-links">
                         <a href="https://facebook.com" id="facebookLink">Facebook</a>
                         <a href="https://instagram.com" id="instagramFooterLink">Instagram</a>
@@ -251,7 +273,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p id="copyrightText">© 2024 Code Adventures, Hong Kong. All rights reserved.</p>
+                <p id="copyrightText" data-en="© 2024 Code Adventures, Hong Kong. All rights reserved." data-zh="© 2024 Code Adventures，香港。版權所有。">© 2024 Code Adventures, Hong Kong. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -17,7 +17,7 @@
                 <span class="logo-text">Code Adventures</span>
             </div>
             <nav class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link" data-en="Home" data-zh="首頁">Home</a>
                 <button class="lang-toggle" onclick="toggleLanguage()">
                     <span class="lang-icon">🌐</span>
                     <span class="lang-text" id="langText">中文</span>
@@ -31,12 +31,31 @@
         </div>
     </header>
 
-    <!-- Header -->
-    <section class="course-header blockly-header-section">
-        <div class="container">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1 id="blocklyPageTitle">Google Blockly for P4-P6</h1>
-            <p id="blocklyPageDesc">Start your coding journey with visual block-based programming. No prior experience needed!</p>
+    <!-- Hero Section - Blockly -->
+    <section class="blockly-hero">
+        <div class="hero-background">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <a href="index.html" class="back-link" data-en="← Back to Home" data-zh="← 返回首頁">← Back to Home</a>
+                <h1 class="hero-title" data-en="Create Your First Game Today" data-zh="今天創建您的第一個遊戲">Create Your First Game Today</h1>
+                <p class="hero-subtitle" data-en="Visual Programming for Young Creators" data-zh="年輕創作者的視覺化編程">Visual Programming for Young Creators</p>
+                <p class="hero-description" data-en="No coding experience needed! Drag-and-drop blocks make programming fun, easy, and instantly rewarding. Build games, animations, and interactive stories in minutes." data-zh="無需編碼經驗！拖放積木使編程變得有趣、簡單且立即獲得回報。在幾分鐘內構建遊戲、動畫和互動故事。">No coding experience needed! Drag-and-drop blocks make programming fun, easy, and instantly rewarding. Build games, animations, and interactive stories in minutes.</p>
+                <div class="hero-cta">
+                    <a href="#objectives" class="btn btn-primary" data-en="Start Creating" data-zh="開始創作">Start Creating</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Learn More" data-zh="了解更多">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual blockly-visual">
+                <div class="blockly-blocks">
+                    <div class="block block-blue">when clicked</div>
+                    <div class="block block-orange">move 10 steps</div>
+                    <div class="block block-purple">change color</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -46,208 +65,172 @@
             <div class="overview-cards">
                 <div class="overview-card">
                     <div class="icon">📚</div>
-                    <h3 id="levelLabel">Level</h3>
+                    <h3 id="levelLabel" data-en="Level" data-zh="程度">Level</h3>
                     <p>P4 - P6</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">👥</div>
-                    <h3 id="maxStudentsLabel">Max Students</h3>
+                    <h3 id="maxStudentsLabel" data-en="Max Students" data-zh="最多學生數">Max Students</h3>
                     <p>8 students</p>
                 </div>
                 <div class="overview-card">
                     <div class="icon">💻</div>
-                    <h3 id="formatLabel">Format</h3>
-                    <p id="onlineLabel">Online (Live)</p>
-                </div>
-                <div class="overview-card">
-                    <div class="icon">🌐</div>
-                    <h3 id="languageLabel">Language</h3>
-                    <p id="bilingualLabel">English & Cantonese</p>
+                    <h3 id="formatLabel" data-en="Format" data-zh="形式">Format</h3>
+                    <p id="onlineLabel" data-en="Online (Live)" data-zh="線上（即時）">Online (Live)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Learning Objectives -->
-    <section class="learning-objectives">
+    <!-- Why Blockly - Featured Section -->
+    <section class="why-blockly-featured">
         <div class="container">
-            <h2 id="objectivesTitle">Learning Objectives</h2>
-            <div class="objectives-grid">
-                <div class="objective-card">
-                    <div class="obj-number">1</div>
-                    <p id="obj1">Understand fundamental programming concepts through visual blocks</p>
+            <div class="featured-header">
+                <h2 id="whyBlocklyTitle" data-en="Why Kids Love Blockly" data-zh="孩子們為什麼喜歡 Blockly">Why Kids Love Blockly</h2>
+                <p data-en="The perfect way to learn programming fundamentals" data-zh="學習編程基礎的完美方式">The perfect way to learn programming fundamentals</p>
+            </div>
+            <div class="why-featured-grid blockly-grid">
+                <div class="featured-card featured-card-highlight">
+                    <div class="featured-icon">🎨</div>
+                    <h3 data-en="Visual & Fun" data-zh="視覺化和有趣">Visual & Fun</h3>
+                    <p data-en="Drag-and-drop blocks instead of typing code. See results instantly! No syntax errors to frustrate you." data-zh="拖放積木而不是輸入代碼。立即查看結果！沒有語法錯誤讓您沮喪。">Drag-and-drop blocks instead of typing code. See results instantly! No syntax errors to frustrate you.</p>
                 </div>
-                <div class="objective-card">
-                    <div class="obj-number">2</div>
-                    <p id="obj2">Create interactive games and animations</p>
+                <div class="featured-card featured-card-large">
+                    <div class="featured-icon">⚡</div>
+                    <h3 data-en="Instant Feedback" data-zh="即時反饋">Instant Feedback</h3>
+                    <p data-en="Run your code immediately and see what happens. Learn by doing and experimenting!" data-zh="立即運行您的代碼並查看會發生什麼。通過實踐和實驗來學習！">Run your code immediately and see what happens. Learn by doing and experimenting!</p>
                 </div>
-                <div class="objective-card">
-                    <div class="obj-number">3</div>
-                    <p id="obj3">Develop logical thinking and problem-solving abilities</p>
-                </div>
-                <div class="objective-card">
-                    <div class="obj-number">4</div>
-                    <p id="obj4">Build confidence in technology and coding</p>
+                <div class="featured-card featured-card-large">
+                    <div class="featured-icon">✨</div>
+                    <h3 data-en="Creative Freedom" data-zh="創意自由">Creative Freedom</h3>
+                    <p data-en="Create games, animations, and interactive stories. Express your imagination while learning real programming concepts!" data-zh="創建遊戲、動畫和互動故事。在學習真實編程概念的同時表達您的想像力！">Create games, animations, and interactive stories. Express your imagination while learning real programming concepts!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Curriculum -->
-    <section class="curriculum">
+    <!-- Learning Objectives - Card Grid -->
+    <section class="learning-objectives-card">
         <div class="container">
-            <h2 id="curriculumTitle">Curriculum Overview</h2>
-            <div class="curriculum-modules">
-                <div class="module-card">
-                    <div class="module-number">Module 1</div>
-                    <h3 id="module1Title">Introduction to Blocks</h3>
-                    <p id="module1Desc">Understanding the Blockly interface and basic blocks</p>
+            <h2 id="objectivesTitle" data-en="What Your Child Will Learn" data-zh="您的孩子將學習什麼">What Your Child Will Learn</h2>
+            <div class="objectives-card-grid">
+                <div class="objective-card-item">
+                    <div class="card-icon">🎯</div>
+                    <h3 data-en="Programming Fundamentals" data-zh="編程基礎">Programming Fundamentals</h3>
+                    <p data-en="Loops, conditions, variables, and functions through visual blocks" data-zh="通過視覺積木學習循環、條件、變量和函數">Loops, conditions, variables, and functions through visual blocks</p>
                 </div>
-                <div class="module-card">
-                    <div class="module-number">Module 2</div>
-                    <h3 id="module2Title">Logic & Loops</h3>
-                    <p id="module2Desc">Conditional statements and repetition with loops</p>
+                <div class="objective-card-item">
+                    <div class="card-icon">🎮</div>
+                    <h3 data-en="Game Development" data-zh="遊戲開發">Game Development</h3>
+                    <p data-en="Build interactive games with sprites, sounds, and animations" data-zh="使用精靈、聲音和動畫構建互動遊戲">Build interactive games with sprites, sounds, and animations</p>
                 </div>
-                <div class="module-card">
-                    <div class="module-number">Module 3</div>
-                    <h3 id="module3Title">Variables & Lists</h3>
-                    <p id="module3Desc">Storing and managing data with variables and lists</p>
-                </div>
-                <div class="module-card">
-                    <div class="module-number">Module 4</div>
-                    <h3 id="module4Title">Create Your Game</h3>
-                    <p id="module4Desc">Design and build your own interactive game project</p>
+                <div class="objective-card-item">
+                    <div class="card-icon">🧠</div>
+                    <h3 data-en="Logical Thinking" data-zh="邏輯思維">Logical Thinking</h3>
+                    <p data-en="Develop problem-solving skills and computational thinking" data-zh="培養解決問題的技能和運算思維">Develop problem-solving skills and computational thinking</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Blockly -->
-    <section class="why-blockly">
+    <!-- Curriculum - Carousel Style -->
+    <section class="curriculum-carousel">
         <div class="container">
-            <h2 id="whyBlocklyTitle">Why Google Blockly?</h2>
-            <div class="why-grid">
-                <div class="why-card">
-                    <h3 id="whyTitle1">Visual & Intuitive</h3>
-                    <p id="whyDesc1">Drag-and-drop blocks make programming easy and fun for beginners. No complex syntax to memorize!</p>
+            <h2 id="curriculumTitle" data-en="Learning Modules" data-zh="學習模塊">Learning Modules</h2>
+            <div class="carousel-grid">
+                <div class="carousel-card">
+                    <div class="carousel-number">01</div>
+                    <h3 data-en="Getting Started" data-zh="入門">Getting Started</h3>
+                    <p data-en="Learn the Blockly interface and create your first program" data-zh="學習 Blockly 界面並創建您的第一個程序">Learn the Blockly interface and create your first program</p>
+                    <div class="carousel-icon">🚀</div>
                 </div>
-                <div class="why-card">
-                    <h3 id="whyTitle2">Builds Real Skills</h3>
-                    <p id="whyDesc2">Learn fundamental programming concepts like loops, conditions, and variables through visual blocks.</p>
+                <div class="carousel-card">
+                    <div class="carousel-number">02</div>
+                    <h3 data-en="Build & Create" data-zh="構建和創作">Build & Create</h3>
+                    <p data-en="Master loops, conditions, and variables through fun projects" data-zh="通過有趣的項目掌握循環、條件和變量">Master loops, conditions, and variables through fun projects</p>
+                    <div class="carousel-icon">🎨</div>
                 </div>
-                <div class="why-card">
-                    <h3 id="whyTitle3">Instant Feedback</h3>
-                    <p id="whyDesc3">See your code run immediately and get instant feedback on what works and what needs fixing.</p>
-                </div>
-                <div class="why-card">
-                    <h3 id="whyTitle4">Creative Freedom</h3>
-                    <p id="whyDesc4">Create games, animations, and interactive stories. Express your creativity while learning!</p>
+                <div class="carousel-card">
+                    <div class="carousel-number">03</div>
+                    <h3 data-en="Game Master" data-zh="遊戲大師">Game Master</h3>
+                    <p data-en="Create your own games and interactive stories to share" data-zh="創建您自己的遊戲和互動故事以分享">Create your own games and interactive stories to share</p>
+                    <div class="carousel-icon">🎮</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Class Structure -->
-    <section class="class-structure">
+    <!-- Class Structure - Fun Timeline -->
+    <section class="class-structure-fun">
         <div class="container">
-            <h2 id="structureTitle">Class Structure</h2>
-            <div class="structure-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">👋</div>
-                    <h3 id="welcomeTitle">Welcome & Icebreaker</h3>
-                    <p id="welcomeDesc">5 minutes: Fun warm-up activity to get everyone excited</p>
+            <h2 id="structureTitle" data-en="A Typical Class" data-zh="典型的課堂">A Typical Class</h2>
+            <div class="fun-timeline">
+                <div class="fun-step">
+                    <div class="fun-icon">👋</div>
+                    <h3 data-en="Welcome!" data-zh="歡迎！">Welcome!</h3>
+                    <p data-en="5 min: Fun icebreaker & warm-up games" data-zh="5 分鐘：有趣的破冰和熱身遊戲">5 min: Fun icebreaker & warm-up games</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">🎨</div>
-                    <h3 id="conceptTitle">Concept Introduction</h3>
-                    <p id="conceptDesc">15 minutes: Visual demonstrations with Blockly blocks and real examples</p>
+                <div class="fun-arrow">↓</div>
+                <div class="fun-step">
+                    <div class="fun-icon">🎨</div>
+                    <h3 data-en="Learn Together" data-zh="一起學習">Learn Together</h3>
+                    <p data-en="15 min: Interactive demos & live examples" data-zh="15 分鐘：互動演示和實時示例">15 min: Interactive demos & live examples</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">🎮</div>
-                    <h3 id="codingTitle">Interactive Coding</h3>
-                    <p id="codingDesc">25 minutes: Students create and experiment with blocks, with instructor guidance</p>
+                <div class="fun-arrow">↓</div>
+                <div class="fun-step">
+                    <div class="fun-icon">🎮</div>
+                    <h3 data-en="Create & Code" data-zh="創建和編碼">Create & Code</h3>
+                    <p data-en="25 min: Build your own projects with guidance" data-zh="25 分鐘：在指導下構建您自己的項目">25 min: Build your own projects with guidance</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-icon">🏆</div>
-                    <h3 id="showcaseTitle">Showcase & Celebration</h3>
-                    <p id="showcaseDesc">10 minutes: Students share their creations and celebrate achievements</p>
+                <div class="fun-arrow">↓</div>
+                <div class="fun-step">
+                    <div class="fun-icon">🏆</div>
+                    <h3 data-en="Showcase!" data-zh="展示！">Showcase!</h3>
+                    <p data-en="10 min: Share & celebrate your creations" data-zh="10 分鐘：分享和慶祝您的創作">10 min: Share & celebrate your creations</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Requirements -->
-    <section class="requirements">
+    <!-- Support - Highlight + Sidebar -->
+    <section class="support-highlight">
         <div class="container">
-            <h2 id="requirementsTitle">Requirements</h2>
-            <div class="requirements-grid">
-                <div class="requirement-card">
-                    <h3 id="techReqTitle">Technical Requirements</h3>
-                    <ul>
-                        <li id="req1">✓ Computer with internet connection</li>
-                        <li id="req2">✓ Modern web browser</li>
-                        <li id="req3">✓ Google account (free)</li>
-                    </ul>
+            <h2 id="supportTitle" data-en="Full Support Included" data-zh="包括完整支持">Full Support Included</h2>
+            <div class="support-highlight-grid">
+                <div class="support-main">
+                    <div class="support-icon-large">👩‍💻</div>
+                    <h3 data-en="Expert Instructors" data-zh="專家教師">Expert Instructors</h3>
+                    <p data-en="Our friendly teachers are passionate about helping kids learn and create. They're here to answer questions and guide you every step of the way." data-zh="我們友好的教師熱衷於幫助孩子學習和創作。他們隨時準備回答問題並在每一步指導您。">Our friendly teachers are passionate about helping kids learn and create. They're here to answer questions and guide you every step of the way.</p>
                 </div>
-                <div class="requirement-card">
-                    <h3 id="personalReqTitle">Personal Requirements</h3>
-                    <ul>
-                        <li id="req4">✓ Enthusiasm to learn</li>
-                        <li id="req5">✓ No prior coding experience needed</li>
-                        <li id="req6">✓ Imagination and creativity</li>
-                    </ul>
+                <div class="support-sidebar">
+                    <div class="support-item">
+                        <div class="support-item-icon">🎮</div>
+                        <h4 data-en="Fun Projects" data-zh="有趣的項目">Fun Projects</h4>
+                        <p data-en="Create games you can share" data-zh="創建您可以分享的遊戲">Create games you can share</p>
+                    </div>
+                    <div class="support-item">
+                        <div class="support-item-icon">🏅</div>
+                        <h4 data-en="Certificates" data-zh="證書">Certificates</h4>
+                        <p data-en="Earn certificates of completion" data-zh="獲得完成證書">Earn certificates of completion</p>
+                    </div>
+                    <div class="support-item">
+                        <div class="support-item-icon">📚</div>
+                        <h4 data-en="Resources" data-zh="資源">Resources</h4>
+                        <p data-en="Access learning materials anytime" data-zh="隨時訪問學習材料">Access learning materials anytime</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Support -->
-    <section class="support">
+    <!-- CTA Section -->
+    <section class="course-cta-blockly">
         <div class="container">
-            <h2 id="supportTitle">Support</h2>
-            <div class="support-grid">
-                <div class="support-card">
-                    <div class="support-icon">👩‍💻</div>
-                    <h3 id="mentorshipTitle">Expert Guidance</h3>
-                    <p id="mentorshipDesc">Get help from our friendly instructors anytime during class</p>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">🎮</div>
-                    <h3 id="projectsTitle">Fun Projects</h3>
-                    <p id="projectsDesc">Create games and animations you can share with friends</p>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">🏅</div>
-                    <h3 id="certificateTitle">Certificates</h3>
-                    <p id="certificateDesc">Earn a certificate upon course completion</p>
-                </div>
+            <div class="cta-content">
+                <h2 id="ctaTitle" data-en="Let's Create Something Amazing!" data-zh="讓我們創建令人驚嘆的東西！">Let's Create Something Amazing!</h2>
+                <p id="ctaDesc" data-en="Your child's creative journey starts here. Join our community of young creators today!" data-zh="您孩子的創意之旅從這裡開始。立即加入我們的年輕創作者社區！">Your child's creative journey starts here. Join our community of young creators today!</p>
+                <a href="index.html" class="cta-button-large blockly-cta" id="enrollBtn" data-en="Enroll Your Child Now" data-zh="立即報名您的孩子">Enroll Your Child Now</a>
             </div>
-        </div>
-    </section>
-
-    <!-- Schedule -->
-    <section class="schedule">
-        <div class="container">
-            <h2 id="scheduleTitle">Flexible Schedule</h2>
-            <div class="schedule-card">
-                <p id="scheduleDesc">Perfect for busy students! Choose what works best for you:</p>
-                <ul>
-                    <li id="schedule1">After-school sessions (4:00 PM - 5:00 PM)</li>
-                    <li id="schedule2">Weekend classes (Saturday & Sunday)</li>
-                    <li id="schedule3">Holiday intensive programs</li>
-                    <li id="schedule4">Flexible one-on-one sessions</li>
-                </ul>
-                <p id="scheduleContact">Contact us to find the perfect time for your schedule!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="course-cta">
-        <div class="container">
-            <h2 id="ctaTitle">Ready to Create Your First Game?</h2>
-            <p id="ctaDesc">Join thousands of young programmers who are learning and creating amazing projects with Blockly. Start your adventure today!</p>
-            <a href="index.html" class="cta-button" id="enrollBtn">Enroll Now</a>
         </div>
     </section>
 
@@ -256,19 +239,19 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h4 id="footerAboutTitle">About Us</h4>
-                    <p id="footerAboutDesc">Code Adventures - Leading STEM education provider for Hong Kong students</p>
+                    <h4 id="footerAboutTitle" data-en="About Us" data-zh="關於我們">About Us</h4>
+                    <p id="footerAboutDesc" data-en="Code Adventures - Leading STEM education provider" data-zh="Code Adventures - 領先的 STEM 教育提供者">Code Adventures - Leading STEM education provider</p>
                 </div>
                 <div class="footer-section">
-                    <h4 id="footerLinksTitle">Quick Links</h4>
+                    <h4 id="footerLinksTitle" data-en="Quick Links" data-zh="快速連結">Quick Links</h4>
                     <ul>
-                        <li><a href="index.html#courses" id="footerCoursesLink">Courses</a></li>
-                        <li><a href="index.html#about" id="footerAboutLink">About</a></li>
-                        <li><a href="index.html#contact" id="footerContactLink">Contact</a></li>
+                        <li><a href="index.html#courses" id="footerCoursesLink" data-en="Courses" data-zh="課程">Courses</a></li>
+                        <li><a href="index.html#about" id="footerAboutLink" data-en="About" data-zh="關於">About</a></li>
+                        <li><a href="index.html#contact" id="footerContactLink" data-en="Contact" data-zh="聯絡">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 id="footerFollowTitle">Follow Us</h4>
+                    <h4 id="footerFollowTitle" data-en="Follow Us" data-zh="追蹤我們">Follow Us</h4>
                     <div class="social-links">
                         <a href="https://facebook.com" id="facebookLink">Facebook</a>
                         <a href="https://instagram.com" id="instagramFooterLink">Instagram</a>
@@ -276,7 +259,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p id="copyrightText">© 2024 Code Adventures, Hong Kong. All rights reserved.</p>
+                <p id="copyrightText" data-en="© 2024 Code Adventures, Hong Kong. All rights reserved." data-zh="© 2024 Code Adventures，香港。版權所有。">© 2024 Code Adventures, Hong Kong. All rights reserved.</p>
             </div>
         </div>
     </footer>

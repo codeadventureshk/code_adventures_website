@@ -17,9 +17,9 @@
                 <span class="logo-text">Code Adventures</span>
             </div>
             <nav class="nav-menu">
-                <a href="#courses" class="nav-link">Courses</a>
-                <a href="#about" class="nav-link">About Us</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#courses" class="nav-link" data-en="Courses" data-zh="課程">Courses</a>
+                <a href="#about" class="nav-link" data-en="About Us" data-zh="關於我們">About Us</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-zh="聯絡">Contact</a>
                 <button class="lang-toggle" onclick="toggleLanguage()">
                     <span class="lang-icon">🌐</span>
                     <span class="lang-text" id="langText">中文</span>
@@ -41,13 +41,12 @@
             <div class="hero-blob hero-blob-3"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge" id="heroBadge">🚀 Welcome to Code Adventures</div>
-            <h1 id="heroTitle">Inspire the Next Generation of Innovators</h1>
-            <p id="heroSubtitle">High-quality online STEM education for Hong Kong students</p>
+            <div class="hero-badge" id="heroBadge" data-en="🚀 Welcome to Code Adventures" data-zh="🚀 歡迎來到Code Adventures">🚀 Welcome to Code Adventures</div>
+            <h1 id="heroTitle" data-en="Inspire the Next Generation of Innovators" data-zh="啟發下一代創新者">Inspire the Next Generation of Innovators</h1>
+            <p id="heroSubtitle" data-en="High-quality online STEM education for Hong Kong students" data-zh="為香港學生提供高質素的線上STEM教育">High-quality online STEM education for Hong Kong students</p>
             <button class="cta-button" onclick="document.getElementById('courses').scrollIntoView({behavior: 'smooth'})">
-                <span id="ctaText">Explore Courses</span>
+                <span id="ctaText" data-en="Explore Courses" data-zh="探索課程">Explore Courses</span>
             </button>
-
         </div>
     </section>
 
@@ -55,52 +54,52 @@
     <section class="company-overview">
         <div class="container">
             <div class="company-header">
-                <h2 id="companyTitle">Company Overview</h2>
+                <h2 id="companyTitle" data-en="Company Overview" data-zh="公司簡介">Company Overview</h2>
                 <div class="company-accent"></div>
             </div>
             <div class="company-content">
-                <p id="companyDesc">Our company is dedicated to providing high-quality online STEM education to primary and junior secondary students in Hong Kong. We focus on interactive, real-time programming classes that inspire creativity, logical thinking, and problem-solving skills. Our curriculum is designed to make coding fun and accessible for every child — from Blockly for beginners (P3–P6) to Python for young developers (S1–S3).</p>
+                <p id="companyDesc" data-en="Our company is dedicated to providing high-quality online STEM education to primary and junior secondary students in Hong Kong. We focus on interactive, real-time programming classes that inspire creativity, logical thinking, and problem-solving skills. Our curriculum is designed to make coding fun and accessible for every child — from Blockly for beginners (P3–P6) to Python for young developers (S1–S3)." data-zh="本公司專注為香港的小學及初中學生提供高質素的線上STEM教育。我們以互動、即時的編程課堂為核心，培養學生的創意、邏輯思維及解難能力。課程設計以趣味與實踐並重，從適合初學者的Blockly（小三至小六）到入門程式語言Python（中一至中三），讓學生循序漸進地愛上編程。">Our company is dedicated to providing high-quality online STEM education to primary and junior secondary students in Hong Kong. We focus on interactive, real-time programming classes that inspire creativity, logical thinking, and problem-solving skills. Our curriculum is designed to make coding fun and accessible for every child — from Blockly for beginners (P3–P6) to Python for young developers (S1–S3).</p>
                 <div class="company-highlights">
                     <div class="highlight-item">
                         <div class="highlight-icon">🎯</div>
-                        <h4 id="focusTitle">Our Focus</h4>
-                        <p id="focusDesc">Interactive, real-time classes</p>
+                        <h4 id="focusTitle" data-en="Our Focus" data-zh="我們的焦點">Our Focus</h4>
+                        <p id="focusDesc" data-en="Interactive, real-time classes" data-zh="互動、即時的課堂">Interactive, real-time classes</p>
                     </div>
                     <div class="highlight-item">
                         <div class="highlight-icon">🌟</div>
-                        <h4 id="goalTitle">Our Goal</h4>
-                        <p id="goalDesc">Make coding fun & accessible</p>
+                        <h4 id="goalTitle" data-en="Our Goal" data-zh="我們的目標">Our Goal</h4>
+                        <p id="goalDesc" data-en="Make coding fun & accessible" data-zh="讓編程變得有趣易學">Make coding fun & accessible</p>
                     </div>
                     <div class="highlight-item">
                         <div class="highlight-icon">📚</div>
-                        <h4 id="curriculumTitle">Our Curriculum</h4>
-                        <p id="curriculumDesc">Blockly to Python progression</p>
+                        <h4 id="curriculumTitle" data-en="Our Curriculum" data-zh="我們的課程">Our Curriculum</h4>
+                        <p id="curriculumDesc" data-en="Blockly to Python progression" data-zh="Blockly到Python進階">Blockly to Python progression</p>
                     </div>
                 </div>
             </div>
             
             <div class="mission-section">
-                <h3 id="missionTitle">Our Mission</h3>
+                <h3 id="missionTitle" data-en="Our Mission" data-zh="我們的宗旨">Our Mission</h3>
                 <div class="mission-grid">
                     <div class="mission-card mission-card-1">
                         <div class="mission-icon">💪</div>
-                        <h4 id="missionHead1">Build Confidence</h4>
-                        <p id="mission1">Build students' confidence in technology and coding</p>
+                        <h4 id="missionHead1" data-en="Build Confidence" data-zh="建立信心">Build Confidence</h4>
+                        <p id="mission1" data-en="Build students' confidence in technology and coding" data-zh="建立學生對科技與編程的信心">Build students' confidence in technology and coding</p>
                     </div>
                     <div class="mission-card mission-card-2">
                         <div class="mission-icon">🧠</div>
-                        <h4 id="missionHead2">Problem Solving</h4>
-                        <p id="mission2">Encourage problem-solving through hands-on learning</p>
+                        <h4 id="missionHead2" data-en="Problem Solving" data-zh="解難能力">Problem Solving</h4>
+                        <p id="mission2" data-en="Encourage problem-solving through hands-on learning" data-zh="透過實作學習提升解難能力">Encourage problem-solving through hands-on learning</p>
                     </div>
                     <div class="mission-card mission-card-3">
                         <div class="mission-icon">🌍</div>
-                        <h4 id="missionHead3">Bilingual Learning</h4>
-                        <p id="mission3">Provide a bilingual (English & Cantonese) learning environment</p>
+                        <h4 id="missionHead3" data-en="Bilingual Learning" data-zh="雙語教學">Bilingual Learning</h4>
+                        <p id="mission3" data-en="Provide a bilingual (English & Cantonese) learning environment" data-zh="提供英語及廣東話雙語教學環境">Provide a bilingual (English & Cantonese) learning environment</p>
                     </div>
                     <div class="mission-card mission-card-4">
                         <div class="mission-icon">🏠</div>
-                        <h4 id="missionHead4">Accessible</h4>
-                        <p id="mission4">Make quality STEM education accessible from home</p>
+                        <h4 id="missionHead4" data-en="Accessible" data-zh="易於取得">Accessible</h4>
+                        <p id="mission4" data-en="Make quality STEM education accessible from home" data-zh="讓學生在家中也能享有優質STEM教育">Make quality STEM education accessible from home</p>
                     </div>
                 </div>
             </div>
@@ -110,37 +109,37 @@
     <!-- Courses Section -->
     <section id="courses" class="courses-section">
         <div class="container">
-            <h2 id="coursesTitle">Our Courses</h2>
+            <h2 id="coursesTitle" data-en="Our Courses" data-zh="我們的課程">Our Courses</h2>
             <div class="courses-grid">
                 <!-- Python Course -->
                 <div class="course-card python-card">
                     <div class="course-header python-header">
-                        <h3 id="pythonTitle">Python Programming</h3>
-                        <p id="pythonLevel">For S1-S3 Students</p>
+                        <h3 id="pythonTitle" data-en="Python Programming" data-zh="Python 編程">Python Programming</h3>
+                        <p id="pythonLevel" data-en="For S1-S3 Students" data-zh="適合中一至中三學生">For S1-S3 Students</p>
                     </div>
                     <div class="course-body">
-                        <p id="pythonDesc">Learn the fundamentals of Python programming with hands-on projects. Build games, applications, and develop computational thinking skills.</p>
+                        <p id="pythonDesc" data-en="Learn the fundamentals of Python programming with hands-on projects. Build games, applications, and develop computational thinking skills." data-zh="學習Python編程基礎，透過實作項目開發遊戲和應用程式，培養運算思維能力。">Learn the fundamentals of Python programming with hands-on projects. Build games, applications, and develop computational thinking skills.</p>
                         <div class="course-info">
-                            <p id="pythonTopics"><strong>📚 Topics:</strong> Variables, Functions, Loops, Data Structures</p>
-                            <p id="pythonSize"><strong>👥 Class Size:</strong> Max 8 students</p>
+                            <p id="pythonTopics"><strong data-en="📚 Topics:" data-zh="📚 主題：">📚 Topics:</strong> <span data-en="Variables, Functions, Loops, Data Structures" data-zh="變量、函數、循環、數據結構">Variables, Functions, Loops, Data Structures</span></p>
+                            <p id="pythonSize"><strong data-en="👥 Class Size:" data-zh="👥 班級人數：">👥 Class Size:</strong> <span data-en="Max 8 students" data-zh="最多8名學生">Max 8 students</span></p>
                         </div>
-                        <a href="python-class.html" class="course-btn python-btn" id="pythonLearnMore">Learn More</a>
+                        <a href="python-class.html" class="course-btn python-btn" id="pythonLearnMore" data-en="Learn More" data-zh="了解更多">Learn More</a>
                     </div>
                 </div>
 
                 <!-- Blockly Course -->
                 <div class="course-card blockly-card">
                     <div class="course-header blockly-header">
-                        <h3 id="blocklyTitle">Google Blockly</h3>
-                        <p id="blocklyLevel">For P4-P6 Students</p>
+                        <h3 id="blocklyTitle" data-en="Google Blockly" data-zh="Google Blockly">Google Blockly</h3>
+                        <p id="blocklyLevel" data-en="For P4-P6 Students" data-zh="適合小四至小六學生">For P4-P6 Students</p>
                     </div>
                     <div class="course-body">
-                        <p id="blocklyDesc">Start your coding journey with visual block-based programming. Perfect for beginners to understand logic and algorithms through fun, interactive lessons.</p>
+                        <p id="blocklyDesc" data-en="Start your coding journey with visual block-based programming. Perfect for beginners to understand logic and algorithms through fun, interactive lessons." data-zh="透過視覺化積木編程開始編碼之旅。適合初學者透過有趣的互動課程理解邏輯和算法。">Start your coding journey with visual block-based programming. Perfect for beginners to understand logic and algorithms through fun, interactive lessons.</p>
                         <div class="course-info">
-                            <p id="blocklyTopics"><strong>📚 Topics:</strong> Logic, Algorithms, Problem-Solving</p>
-                            <p id="blocklySize"><strong>👥 Class Size:</strong> Max 8 students</p>
+                            <p id="blocklyTopics"><strong data-en="📚 Topics:" data-zh="📚 主題：">📚 Topics:</strong> <span data-en="Logic, Algorithms, Problem-Solving" data-zh="邏輯、算法、解決問題">Logic, Algorithms, Problem-Solving</span></p>
+                            <p id="blocklySize"><strong data-en="👥 Class Size:" data-zh="👥 班級人數：">👥 Class Size:</strong> <span data-en="Max 8 students" data-zh="最多8名學生">Max 8 students</span></p>
                         </div>
-                        <a href="blockly-class.html" class="course-btn blockly-btn" id="blocklyLearnMore">Learn More</a>
+                        <a href="blockly-class.html" class="course-btn blockly-btn" id="blocklyLearnMore" data-en="Learn More" data-zh="了解更多">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -150,47 +149,42 @@
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2 id="whyUsTitle">Why Choose Us?</h2>
+            <h2 id="whyUsTitle" data-en="Why Choose Us?" data-zh="為什麼選擇我們？">Why Choose Us?</h2>
 
             <!-- Founder Story -->
             <div class="founder-card">
-                <h3 id="founderTitle">Founder Story</h3>
-                <p id="founderDesc">We started this journey because we believe coding should be creative, fun, and relevant to every student's future. As young developers ourselves, we understand how to make programming engaging and meaningful. Our energy, combined with the guidance of experienced programmers, helps us design lessons that truly connect with students.</p>
+                <h3 id="founderTitle" data-en="Founder Story" data-zh="創辦人故事">Founder Story</h3>
+                <p id="founderDesc" data-en="We started this journey because we believe coding should be creative, fun, and relevant to every student's future. As young developers ourselves, we understand how to make programming engaging and meaningful. Our energy, combined with the guidance of experienced programmers, helps us design lessons that truly connect with students." data-zh="我們創辦這個平台，是因為我們相信「編程應該是有趣、創意並與未來息息相關」。身為年輕的程式開發者，我們比任何人更了解學生的想法，知道如何令他們投入學習。配合專業程式設計師的指導，我們的課程既專業又貼近學生。">We started this journey because we believe coding should be creative, fun, and relevant to every student's future. As young developers ourselves, we understand how to make programming engaging and meaningful. Our energy, combined with the guidance of experienced programmers, helps us design lessons that truly connect with students.</p>
             </div>
 
             <!-- Our Strengths with Icons -->
             <div class="strengths-section">
-                <h3 id="strengthsTitle">Our Strengths</h3>
+                <h3 id="strengthsTitle" data-en="Our Strengths" data-zh="我們的優勢">Our Strengths</h3>
                 <div class="strengths-grid">
                     <div class="strength-card" onclick="this.classList.toggle('active')">
                         <div class="strength-icon">🌍</div>
-                        <h4 id="strength1Title">Bilingual Learning</h4>
-                        <p id="strength1Desc">English and Cantonese teaching to suit Hong Kong students.</p>
+                        <h4 id="strength1Title" data-en="Bilingual Learning" data-zh="雙語教學">Bilingual Learning</h4>
+                        <p id="strength1Desc" data-en="English and Cantonese teaching to suit Hong Kong students." data-zh="提供英語及廣東話教學，配合香港學生需要。">English and Cantonese teaching to suit Hong Kong students.</p>
                     </div>
                     <div class="strength-card" onclick="this.classList.toggle('active')">
                         <div class="strength-icon">👨‍💻</div>
-                        <h4 id="strength2Title">Youth-Led Design</h4>
-                        <p id="strength2Desc">Lessons created by young coders who know what's fun and relevant.</p>
+                        <h4 id="strength2Title" data-en="Youth-Led Design" data-zh="年輕團隊設計">Youth-Led Design</h4>
+                        <p id="strength2Desc" data-en="Lessons created by young coders who know what's fun and relevant." data-zh="由年輕程式導師主導課程，更懂學生興趣與節奏。">Lessons created by young coders who know what's fun and relevant.</p>
                     </div>
                     <div class="strength-card" onclick="this.classList.toggle('active')">
                         <div class="strength-icon">⭐</div>
-                        <h4 id="strength3Title">Professional Support</h4>
-                        <p id="strength3Desc">Experienced programmers ensure the curriculum is solid and progressive.</p>
-                    </div>
-                    <div class="strength-card" onclick="this.classList.toggle('active')">
-                        <div class="strength-icon">💬</div>
-                        <h4 id="strength4Title">Interactive & Real-Time</h4>
-                        <p id="strength4Desc">Every class is live — no boring recordings. Students can ask, share, and create together.</p>
+                        <h4 id="strength3Title" data-en="Professional Support" data-zh="專業顧問支援">Professional Support</h4>
+                        <p id="strength3Desc" data-en="Experienced programmers ensure the curriculum is solid and progressive." data-zh="經驗豐富的程式員協助課程設計，確保學習系統化。">Experienced programmers ensure the curriculum is solid and progressive.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Teaching Philosophy - Interactive -->
             <div class="philosophy-card interactive-philosophy">
-                <h3 id="philosophyTitle">Teaching Philosophy</h3>
+                <h3 id="philosophyTitle" data-en="Teaching Philosophy" data-zh="教學理念">Teaching Philosophy</h3>
                 <div class="philosophy-content">
                     <div class="philosophy-text">
-                        <p id="philosophyDesc">We believe learning to code is not just about syntax — it's about thinking logically, solving problems, and expressing creativity through technology. Our teaching method focuses on doing, not memorizing, so students learn by building games, animations, and mini-projects they're proud of.</p>
+                        <p id="philosophyDesc" data-en="We believe learning to code is not just about syntax — it's about thinking logically, solving problems, and expressing creativity through technology. Our teaching method focuses on doing, not memorizing, so students learn by building games, animations, and mini-projects they're proud of." data-zh="我們相信學習編程不只是記語法，更是培養邏輯思維、解難能力與創意思考的過程。我們的教學以「動手做」為核心，讓學生透過製作遊戲、動畫及小項目，在實踐中建立信心與成就感。">We believe learning to code is not just about syntax — it's about thinking logically, solving problems, and expressing creativity through technology. Our teaching method focuses on doing, not memorizing, so students learn by building games, animations, and mini-projects they're proud of.</p>
                     </div>
                     <div class="philosophy-visual">
                         <div class="philosophy-animation">
@@ -206,10 +200,10 @@
             <div class="vision-section">
                 <div class="vision-card">
                     <div class="vision-icon">🌟</div>
-                    <h3 id="visionTitle">Our Vision</h3>
-                    <p id="visionDesc">Our vision is to become Hong Kong's leading youth-driven STEM education platform — where creativity meets technology. We aim to empower more students to see coding not as homework, but as a tool to change the world.</p>
+                    <h3 id="visionTitle" data-en="Our Vision" data-zh="我們的願景">Our Vision</h3>
+                    <p id="visionDesc" data-en="Our vision is to become Hong Kong's leading youth-driven STEM education platform — where creativity meets technology. We aim to empower more students to see coding not as homework, but as a tool to change the world." data-zh="我們的願景是成為香港最具創意的青少年STEM教育平台，讓科技成為孩子發揮創意與影響力的工具。我們希望每位學生都能從編程中發現自信與無限可能。">Our vision is to become Hong Kong's leading youth-driven STEM education platform — where creativity meets technology. We aim to empower more students to see coding not as homework, but as a tool to change the world.</p>
                     <div class="vision-highlight">
-                        <span class="highlight-text">✨ Creativity Meets Technology ✨</span>
+                        <span class="highlight-text" data-en="✨ Creativity Meets Technology ✨" data-zh="✨ 科技與創意的完美結合 ✨">✨ Creativity Meets Technology ✨</span>
                     </div>
                 </div>
             </div>
@@ -219,13 +213,13 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 id="contactTitle">Get in Touch</h2>
+            <h2 id="contactTitle" data-en="Get in Touch" data-zh="聯絡我們">Get in Touch</h2>
             <div class="contact-channels">
                 <!-- Instagram Channel -->
                 <div class="contact-card instagram-card">
                     <div class="contact-icon instagram-icon">📱</div>
-                    <h3 id="instagramTitle">Follow Us on Instagram</h3>
-                    <p id="instagramDesc">Stay updated with our latest courses, student projects, and STEM tips!</p>
+                    <h3 id="instagramTitle" data-en="Follow Us on Instagram" data-zh="追蹤我們的Instagram">Follow Us on Instagram</h3>
+                    <p id="instagramDesc" data-en="Stay updated with our latest courses, student projects, and STEM tips!" data-zh="了解我們最新的課程、學生項目和STEM技巧！">Stay updated with our latest courses, student projects, and STEM tips!</p>
                     <a href="https://instagram.com" target="_blank" class="contact-link instagram-link">
                         <span id="instagramLink">@codeadventures.hk</span>
                     </a>
@@ -234,15 +228,13 @@
                 <!-- WhatsApp Channel -->
                 <div class="contact-card whatsapp-card">
                     <div class="contact-icon whatsapp-icon">💬</div>
-                    <h3 id="whatsappTitle">Message Us on WhatsApp</h3>
-                    <p id="whatsappDesc">Have questions? Chat with us directly for quick support and enrollment!</p>
+                    <h3 id="whatsappTitle" data-en="Message Us on WhatsApp" data-zh="透過WhatsApp聯絡我們">Message Us on WhatsApp</h3>
+                    <p id="whatsappDesc" data-en="Have questions? Chat with us directly for quick support and enrollment!" data-zh="有問題？直接與我們聊天，快速支持和報名！">Have questions? Chat with us directly for quick support and enrollment!</p>
                     <a href="https://wa.me/85212345678" target="_blank" class="contact-link whatsapp-link">
                         <span id="whatsappLink">+852 1234 5678</span>
                     </a>
                 </div>
             </div>
-
-
         </div>
     </section>
 
@@ -251,19 +243,19 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-section">
-                    <h4 id="footerAboutTitle">About Us</h4>
-                    <p id="footerAboutDesc">Code Adventures - Leading STEM education provider for Hong Kong students</p>
+                    <h4 id="footerAboutTitle" data-en="About Us" data-zh="關於我們">About Us</h4>
+                    <p id="footerAboutDesc" data-en="Code Adventures - Hong Kong's leading STEM education provider" data-zh="Code Adventures - 香港領先的STEM教育提供者">Code Adventures - Hong Kong's leading STEM education provider</p>
                 </div>
                 <div class="footer-section">
-                    <h4 id="footerLinksTitle">Quick Links</h4>
+                    <h4 id="footerLinksTitle" data-en="Quick Links" data-zh="快速連結">Quick Links</h4>
                     <ul>
-                        <li><a href="#courses" id="footerCoursesLink">Courses</a></li>
-                        <li><a href="#about" id="footerAboutLink">About</a></li>
-                        <li><a href="#contact" id="footerContactLink">Contact</a></li>
+                        <li><a href="#courses" id="footerCoursesLink" data-en="Courses" data-zh="課程">Courses</a></li>
+                        <li><a href="#about" id="footerAboutLink" data-en="About" data-zh="關於">About</a></li>
+                        <li><a href="#contact" id="footerContactLink" data-en="Contact" data-zh="聯絡">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4 id="footerFollowTitle">Follow Us</h4>
+                    <h4 id="footerFollowTitle" data-en="Follow Us" data-zh="追蹤我們">Follow Us</h4>
                     <div class="social-links">
                         <a href="https://facebook.com" id="facebookLink">Facebook</a>
                         <a href="https://instagram.com" id="instagramFooterLink">Instagram</a>
@@ -271,7 +263,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p id="copyrightText">© 2024 Code Adventures, Hong Kong. All rights reserved.</p>
+                <p id="copyrightText" data-en="© 2024 Code Adventures, Hong Kong. All rights reserved." data-zh="© 2024 Code Adventures，香港。版權所有。">© 2024 Code Adventures, Hong Kong. All rights reserved.</p>
             </div>
         </div>
     </footer>

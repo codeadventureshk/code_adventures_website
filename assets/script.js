@@ -4,23 +4,64 @@ function toggleMenu() {
     navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
 }
 
-// Language toggle
+// Language state
+let currentLanguage = 'en';
+
+// Language toggle with dynamic content switching
 function toggleLanguage() {
-    const currentPage = window.location.pathname;
+    currentLanguage = currentLanguage === 'en' ? 'zh' : 'en';
+    localStorage.setItem('preferredLanguage', currentLanguage);
+    updateLanguage();
+    updateLangButton();
+}
+
+// Update all text content based on current language
+function updateLanguage() {
+    const elements = document.querySelectorAll('[data-en][data-zh]');
     
-    if (currentPage.includes('python-class') || currentPage.includes('blockly-class')) {
-        // For course pages, just toggle the button text
-        const langText = document.getElementById('langText');
-        langText.textContent = langText.textContent === '中文' ? 'EN' : '中文';
-    } else {
-        // For main pages, navigate between index.html and en.html
-        if (currentPage.includes('en.html') || currentPage.endsWith('/en.html')) {
-            window.location.href = 'index.html';
+    elements.forEach(element => {
+        if (currentLanguage === 'en') {
+            element.textContent = element.getAttribute('data-en');
         } else {
-            window.location.href = 'en.html';
+            element.textContent = element.getAttribute('data-zh');
         }
+    });
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = currentLanguage === 'en' ? 'en' : 'zh';
+    
+    // Update page title
+    if (currentLanguage === 'en') {
+        document.title = 'Code Adventures - STEM Education Hong Kong';
+    } else {
+        document.title = 'Code Adventures - STEM教育香港';
     }
 }
+
+// Update language button text
+function updateLangButton() {
+    const langText = document.getElementById('langText');
+    if (currentLanguage === 'en') {
+        langText.textContent = '中文';
+    } else {
+        langText.textContent = 'EN';
+    }
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if user has a language preference in localStorage
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    if (savedLanguage) {
+        currentLanguage = savedLanguage;
+        updateLanguage();
+        updateLangButton();
+    } else {
+        // Set default to English
+        currentLanguage = 'en';
+        updateLangButton();
+    }
+});
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -62,7 +103,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards
-document.querySelectorAll('.mission-card, .course-card, .strength-card, .objective-card, .module-card, .why-card, .timeline-item, .support-card').forEach(card => {
+document.querySelectorAll('.mission-card, .course-card, .strength-card, .objective-card, .module-card, .why-card, .timeline-item, .support-card, .founder-card, .philosophy-card, .vision-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'all 0.6s ease';
